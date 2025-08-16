@@ -1,0 +1,31 @@
+{
+  "name": "picnic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node backend/dist/index.js",
+    "dev": "nodemon backend/dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rayder006/picnic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rayder006/picnic/issues"
+  },
+  "homepage": "https://github.com/Rayder006/picnic#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
