@@ -1,5 +1,3 @@
-// backend/src/index.ts
-
 import express, { Request, Response } from 'express';
 import ticketData from '../../data/zendesk_mock_tickets_llm_flavor.json';
 import { categorizeTicket, CategorizedTicket } from './categorizer'; // Importar a nova interface

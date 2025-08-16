@@ -54,14 +54,11 @@ const keywords = {
 
 export function categorizeTicket(ticket: Ticket): CategorizedTicket {
     const allText = `${ticket.subject} ${ticket.comment.body} ${ticket.comments.map(c => c.body).join(' ')}`.toLowerCase();
-
-    // Loop na ordem de prioridade (P1, P2, P3)
     for (const key of ['p1', 'p2', 'p3']) {
         const priorityBlock = keywords[key as keyof typeof keywords];
         
         for (const term of priorityBlock.terms) {
             if (allText.includes(term)) {
-                // First-match ganha! Retorna a categoria e prioridade
                 return {
                     ...ticket,
                     category: priorityBlock.category,
@@ -71,7 +68,6 @@ export function categorizeTicket(ticket: Ticket): CategorizedTicket {
         }
     }
 
-    // Se nenhuma regra bater, retorna o default
     return {
         ...ticket,
         category: "Outros",
