@@ -43,5 +43,5 @@ Como rodar o projeto
 
 
 
-Considerações finais
+Considerações finais: 
 Este projeto demonstra minha capacidade de aprender novas tecnologias rapidamente e aplicar conceitos de desenvolvimento de forma prática, mesmo com experiência prévia limitada nas ferramentas solicitadas.
