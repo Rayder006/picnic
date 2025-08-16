@@ -81,7 +81,7 @@ const TicketsPage: React.FC = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>Dashboard de Tickets de Suporte</h1>
+      <h1>Dashboard</h1>
       <div className="kanban-container">
         <CategoryColumn title="Prioridade 1 - Autenticação/Financeiro" tickets={categorias['Autenticação/Financeiro']} onTicketClick={handleTicketClick} />
         <CategoryColumn title="Prioridade 2 - Logística/Produto" tickets={categorias['Logística/Produto']} onTicketClick={handleTicketClick} />
