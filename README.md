@@ -30,7 +30,7 @@ Tecnologias utilizadas
 
 Como rodar o projeto
  1. Clone o repositório:
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/Rayder006/picnic.git
  2. Instale as dependências:
     cd frontend && npm install
     cd ../backend && npm install
